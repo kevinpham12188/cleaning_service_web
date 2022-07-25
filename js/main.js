@@ -1,3 +1,14 @@
+window.addEventListener("load", () => {
+    const preloader = document.querySelector(".js-preloader");
+    preloader.classList.add("fade-out");
+
+    setTimeout(() => {
+        preloader.style.display = "none";
+        // animate on scroll
+    AOS.init();
+    }, 600)   
+})
+
 // header background reveal
 
 const headerBg = ()=>{
